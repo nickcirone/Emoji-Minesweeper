@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMP426: Minesweeper</title>
+    <link rel="stylesheet" href="Minesweeper.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="Minesweeper.js"></script>
+</head>
+<body>
+
+<div class="minesweeper">
+    <div class="controlWrapper">
+        <div class="controls">
+            <h2 class="MSTitle">minesweeper</h2>
+            <h3 class="timer">time: 0 seconds</h3>
+            <h3 class="minesRemaining">mines remaining: 0</h3>
+            <div class="inputsDiv">
+                <div class="specDiv"><button type="button" id="reset">reset</button></div>
+                <br>
+                <div class="specDiv">size x: <input type="number" min="8" max="40" value="8" id="X"></div>
+                <br>
+                <div class="specDiv">size y: <input type="number" min="8" max="30" value="8" id="Y"></div>
+                <br>
+                <div class="specDiv">mines: <input type="number" id="mineAmt" min="1" value="8"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <table class="minetable">
+        <tbody id="minefield">
+
+        </tbody>
+    </table>
+
+    <h6 align="center">Created by Nicholas Cirone for COMP 426 Assignment 2</h6>
+
+</div>
+
+
+</body>
+</html>
